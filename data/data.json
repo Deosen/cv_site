@@ -1,0 +1,115 @@
+{
+    "pl": {
+        "picture": "/img/1n.jpg",
+        "firstName": "Michał",
+        "secoundName": "Piotr",
+        "surname": "Jabrzyk",
+        "email": "michaljabrzyk.it@gmail.com",
+        "mobile": "+48 500 254 918",
+        "softSkills": [
+            "HTML & CSS",
+            "JavaScript",
+            "Java",
+            "C#",
+            "ASP.Net",
+            "Python",
+            "SQL"
+        ],
+        "hardSkills": [
+            "HTML & CSS",
+            "JavaScript",
+            "Python",
+            "SQL"
+        ],
+        "lang": [
+            {
+                "language": "Polski",
+                "level": "Rodzimy"
+            },
+            {
+                "language": "Angielski",
+                "level": "Zaawansowany (B2)"
+            }
+        ],
+        "experience": [
+            {
+                "company": "Firma XYZ",
+                "position": "Programista",
+                "time": "2020 - obecnie",
+                "description": "Odpowiedzialny za rozwój i utrzymanie aplikacji internetowych w technologii .NET i JavaScript."
+            },
+            {
+                "company": "Firma ABC",
+                "position": "Stażysta",
+                "time": "2019 - 2020",
+                "description": "Współpraca przy projektach z zakresu analiz danych oraz optymalizacji procesów."
+            }
+        ],
+        "education": {
+            "school": "Uniwersytet Technologiczny",
+            "fieldOfStudy": "Informatyka",
+            "time": "2015 - 2019"
+        },
+        "projects": [
+            {
+                "name": "Projekt XYZ",
+                "description": "Opis projektu, technologie, osiągnięcia."
+            }
+        ]
+    },
+    "en": {
+        "picture": "/img/1n.jpg",
+        "firstName": "Michal",
+        "secoundName": "Piotr",
+        "surname": "Jabrzyk",
+        "email": "michaljabrzyk.it@gmail.com",
+        "mobile": "+48 500 254 918",
+        "softSkills": [
+            "HTML & CSS",
+            "JavaScript",
+            "Python",
+            "SQL"
+        ],
+        "hardSkills": [
+            "HTML & CSS",
+            "JavaScript",
+            "Python",
+            "SQL"
+        ],
+        "lang": [
+            {
+                "language": "Polish",
+                "level": "Native"
+            },
+            {
+                "language": "English",
+                "level": "Advanced (B2)"
+            }
+        ],
+        "experience": [
+            {
+                "company": "Firma XYZ",
+                "position": "Programista",
+                "time": "2020 - obecnie",
+                "description": "Odpowiedzialny za rozwój i utrzymanie aplikacji internetowych w technologii .NET i JavaScript."
+            },
+            {
+                "company": "Firma ABC",
+                "position": "Stażysta",
+                "time": "2019 - 2020",
+                "description": "Współpraca przy projektach z zakresu analiz danych oraz optymalizacji procesów."
+            }
+        ],
+        "education": {
+            "school": "Uniwersytet Technologiczny",
+            "fieldOfStudy": "Informatyka",
+            "time": "2015 - 2019"
+        },
+        "projects": [
+            {
+                "name": "Projekt XYZ",
+                "description": "Opis projektu, technologie, osiągnięcia."
+            }
+        ]
+    }
+}

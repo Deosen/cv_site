@@ -1,102 +1,88 @@
-// Funkcja do załadowania danych z pliku JSON
 async function loadCVData(lang = 'pl') {
-    const response = await fetch('/data/data.json');
+    const response = await fetch('data/data.json');
     const data = await response.json();
     const cvData = data[lang];
 
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('main-content');
 
-    if (lang === "pl") {
-        // Pasek boczny
-        console.log("pl");
-        document.getElementById('sidebar').innerHTML = `
-            <img src="${cvData.picture}" alt="Zdjęcie profilowe" style="width:100%; border-radius: 2.5%;  
-            margin-bottom: 5px;">
-            <p>${cvData.firstName}</p>
-            <p>${cvData.secoundName}</p>
-            <p>${cvData.surname}</p>
-            <p>Adres e-mail: <a href="mailto:${cvData.email}">${cvData.email}</a></p>
-            <p>Telefon: <a href="tel:${cvData.mobile}">${cvData.mobile}</a></p>
-            <h3>Umiejętności miękkie</h3>
-            <ul>${cvData.softSkills.map(softSkills => `<li>${softSkills}</li>`).join('')}</ul>
-            <h3>Umiejętności twarde</h3>
-            <ul>${cvData.hardSkills.map(hardSkills => `<li>${hardSkills}</li>`).join('')}</ul>
-            <h3>Języki</h3>
-            <ul>${cvData.lang.map(l => `<li>${l.language} - ${l.level}</li>`).join('')}</ul>
-        `;
-
-        // Główna sekcja
-        document.getElementById('main-content').innerHTML = `
+    sidebar.innerHTML = `
+       <div class="sidebar-section">
+            <h4>${lang === 'pl' ? 'Język' : 'Language'}</h4>
             <div class="language-switch">
                 <button id="lang-pl">Polski</button>
                 <button id="lang-en">English</button>
             </div>
-            <h1>Full Stack Developer</h1>
-            <h2>Doświadczenie Zawodowe</h2>
-            ${cvData.experience.map(job => `
-                <h3>${job.company} - ${job.position}</h3>
-                <p>${job.time}</p>
-                <p>${job.description}</p>
-            `).join('')}
-        
-            <h2>Wykształcenie</h2>
-            <h3>${cvData.education.school}</h3>
-            <p>Kierunek: ${cvData.education.fieldOfStudy}, ${cvData.education.time}</p>
-
-            <h2>Projekty</h2>
-            ${cvData.projects.map(project => `
-                <h3>${project.name}</h3>
-                <p>${project.description}</p>
-            `).join('')}
-        `;
-    } else if (lang === "en") {
-        // Pasek boczny
-        document.getElementById('sidebar').innerHTML = `
-            <img src="${cvData.picture}" alt="Picture" style="width:100%; border-radius: 2.5%;  
-            margin-bottom: 5px;">
-            <p>${cvData.firstName}</p>
-            <p>${cvData.secoundName}</p>
-            <p>${cvData.surname}</p>
-            <p>E-mail address: <a href="mailto:${cvData.email}">${cvData.email}</a></p>
-            <p>Phone number: <a href="tel:${cvData.mobile}">${cvData.mobile}</a></p>
-            <h3>Soft Skills</h3>
-            <ul>${cvData.softSkills.map(softSkills => `<li>${softSkills}</li>`).join('')}</ul>
-            <h3>Hard Skills</h3>
-            <ul>${cvData.hardSkills.map(hardSkills => `<li>${hardSkills}</li>`).join('')}</ul>
-            <h3>Languages</h3>
-            <ul>${cvData.lang.map(l => `<li>${l.language} - ${l.level}</li>`).join('')}</ul>
-        `;
-
-        // Główna sekcja
-        document.getElementById('main-content').innerHTML = `
-            <div class="language-switch">
-                <button id="lang-pl">Polish</button>
-                <button id="lang-en">English</button>
+        </div>
+        <div class="sidebar-section">
+            <h4>${lang === 'pl' ? 'Wygląd' : 'Theme'}</h4>
+            <div class="theme-switch">
+                <button data-theme="theme-indigo">Indigo</button>
+                <button data-theme="theme-emerald">Emerald</button>
+                <button data-theme="theme-amber">Amber</button>
             </div>
-            <h1>Full Stack Developer</h1>
-            <h2>Experience</h2>
-            ${cvData.experience.map(job => `
-                <h3>${job.company} - ${job.position}</h3>
-                <p>${job.time}</p>
-                <p>${job.description}</p>
-            `).join('')}
-        
-            <h2>Education</h2>
-            <h3>${cvData.education.school}</h3>
-            <p>Field of study: ${cvData.education.fieldOfStudy}, ${cvData.education.time}</p>
+        </div>
+        <img src="${cvData.picture}" alt="Zdjęcie profilowe">
+        <h3><i class="fas fa-address-card"></i> ${lang === 'pl' ? 'Dane personalne' : 'Personal data'}</h3>
+        <div class="personal-data">
+            <p><i class="fas fa-user"></i> <strong>${cvData.firstName} ${cvData.secoundName} ${cvData.surname}</strong></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:${cvData.email}">${cvData.email}</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:${cvData.mobile}">${cvData.mobile}</a></p>
+        </div>
+        <h3><i class="fas fa-link"></i> ${lang === 'pl' ? 'Linki' : 'Links'}</h3>
+        <div class="social-links">
+            <a href="${cvData.fb}" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="${cvData.github}" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+            <a href="${cvData.linkedin}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="${cvData.website}" target="_blank" aria-label="Website"><i class="fa fa-globe"></i></a>
+        </div>
+        <h3><i class="fas fa-code"></i> ${lang === 'pl' ? 'Umiejętności miękkie' : 'Soft Skills'}</h3>
+        <ul>${cvData.softSkills.map(s => `<li>${s}</li>`).join('')}</ul>
 
-            <h2>Projects</h2>
-            ${cvData.projects.map(project => `
-                <h3>${project.name}</h3>
-                <p>${project.description}</p>
-            `).join('')}
-        `;
-    }
+        <h3><i class="fas fa-tools"></i> ${lang === 'pl' ? 'Umiejętności twarde' : 'Hard Skills'}</h3>
+        <ul>${cvData.hardSkills.map(s => `<li>${s}</li>`).join('')}</ul>
 
+        <h3><i class="fas fa-language"></i> ${lang === 'pl' ? 'Języki' : 'Languages'}</h3>
+        <ul>${cvData.lang.map(l => `<li>${l.language} - ${l.level}</li>`).join('')}</ul>   
+    `;
 
-    // Eventy na przyciskach zmiany języka
+    mainContent.innerHTML = `
+        <h1>Full Stack Developer</h1>
+        <h2>${lang === 'pl' ? 'O mnie' : 'About me'}</h2>
+        <p>${cvData.about}</p>
+        <h2>${lang === 'pl' ? 'Doświadczenie Zawodowe' : 'Experience'}</h2>
+        ${cvData.experience.map(job => `
+            <h3>${job.company} - ${job.position}</h3>
+            <p>${job.time}</p>
+            <p>${job.description}</p>
+        `).join('')}
+
+        <h2>${lang === 'pl' ? 'Wykształcenie' : 'Education'}</h2>
+        ${cvData.education.map(ed => `
+            <h3>${ed.school}</h3>
+            <p>${lang === 'pl' ? 'Kierunek' : 'Field of study'}: ${ed.fieldOfStudy ?? '-'}</p>
+            <p>${ed.time}</p>
+            ${ed.degree ? `<p>${lang === 'pl' ? 'Poziom wykształcenia' : 'Degree'}: ${ed.degree}</p>` : ''}
+            ${ed.specialization ? `<p>${lang === 'pl' ? 'Specjalizacja' : 'Specialization'}: ${ed.specialization}</p>` : ''}
+            ${ed.additional ? `<p>${lang === 'pl' ? 'Dodatkowe informacje' : 'Additional information'}: ${ed.additional}</p>` : ''}
+        `).join('')}
+
+        <h2>${lang === 'pl' ? 'Projekty / Aktywności dodatkowe' : 'Projects / Additional activities'}</h2>
+        ${cvData.projects.map(p => `
+            <h3>${p.name}</h3>
+            ${p.time ? `<p>${p.time}${p.location ? ' / ' + p.location : ''}</p>` : ''}
+            ${p.description ? `<p>${p.description}</p>` : ''}
+        `).join('')}
+    `;
+
     document.getElementById('lang-pl').addEventListener('click', () => loadCVData('pl'));
     document.getElementById('lang-en').addEventListener('click', () => loadCVData('en'));
+
+    document.querySelectorAll('.theme-switch button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.body.className = btn.dataset.theme;
+        });
+    });
 }
 
-// Domyślnie ładowanie wersji polskiej
 loadCVData('pl');

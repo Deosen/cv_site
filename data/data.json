@@ -1,115 +1,236 @@
 {
-    "pl": {
-        "picture": "/img/1n.jpg",
-        "firstName": "Michał",
-        "secoundName": "Piotr",
-        "surname": "Jabrzyk",
-        "email": "michaljabrzyk.it@gmail.com",
-        "mobile": "+48 500 254 918",
-        "softSkills": [
-            "HTML & CSS",
-            "JavaScript",
-            "Java",
-            "C#",
-            "ASP.Net",
-            "Python",
-            "SQL"
-        ],
-        "hardSkills": [
-            "HTML & CSS",
-            "JavaScript",
-            "Python",
-            "SQL"
-        ],
-        "lang": [
-            {
-                "language": "Polski",
-                "level": "Rodzimy"
-            },
-            {
-                "language": "Angielski",
-                "level": "Zaawansowany (B2)"
-            }
-        ],
-        "experience": [
-            {
-                "company": "Firma XYZ",
-                "position": "Programista",
-                "time": "2020 - obecnie",
-                "description": "Odpowiedzialny za rozwój i utrzymanie aplikacji internetowych w technologii .NET i JavaScript."
-            },
-            {
-                "company": "Firma ABC",
-                "position": "Stażysta",
-                "time": "2019 - 2020",
-                "description": "Współpraca przy projektach z zakresu analiz danych oraz optymalizacji procesów."
-            }
-        ],
-        "education": {
-            "school": "Uniwersytet Technologiczny",
-            "fieldOfStudy": "Informatyka",
-            "time": "2015 - 2019"
-        },
-        "projects": [
-            {
-                "name": "Projekt XYZ",
-                "description": "Opis projektu, technologie, osiągnięcia."
-            }
-        ]
-    },
-    "en": {
-        "picture": "/img/1n.jpg",
-        "firstName": "Michal",
-        "secoundName": "Piotr",
-        "surname": "Jabrzyk",
-        "email": "michaljabrzyk.it@gmail.com",
-        "mobile": "+48 500 254 918",
-        "softSkills": [
-            "HTML & CSS",
-            "JavaScript",
-            "Python",
-            "SQL"
-        ],
-        "hardSkills": [
-            "HTML & CSS",
-            "JavaScript",
-            "Python",
-            "SQL"
-        ],
-        "lang": [
-            {
-                "language": "Polish",
-                "level": "Native"
-            },
-            {
-                "language": "English",
-                "level": "Advanced (B2)"
-            }
-        ],
-        "experience": [
-            {
-                "company": "Firma XYZ",
-                "position": "Programista",
-                "time": "2020 - obecnie",
-                "description": "Odpowiedzialny za rozwój i utrzymanie aplikacji internetowych w technologii .NET i JavaScript."
-            },
-            {
-                "company": "Firma ABC",
-                "position": "Stażysta",
-                "time": "2019 - 2020",
-                "description": "Współpraca przy projektach z zakresu analiz danych oraz optymalizacji procesów."
-            }
-        ],
-        "education": {
-            "school": "Uniwersytet Technologiczny",
-            "fieldOfStudy": "Informatyka",
-            "time": "2015 - 2019"
-        },
-        "projects": [
-            {
-                "name": "Projekt XYZ",
-                "description": "Opis projektu, technologie, osiągnięcia."
-            }
-        ]
-    }
+  "pl": {
+    "picture": "/img/1n.jpg",
+    "firstName": "Michał",
+    "secoundName": "Piotr",
+    "surname": "Jabrzyk",
+    "birthDate": "1983-01-11",
+    "email": "michaljabrzyk.it@gmail.com",
+    "mobile": "+48 500 254 918",
+    "fb": "https://www.facebook.com/emyot83/",
+    "github": "https://www.github.com/Deosen",
+    "linkedin": "https://www.linkedin.com/in/michal-jabrzyk",
+    "website": "https://portfolio-michaljabrzyk.pl",
+    "softSkills": [
+      "Komunikacja interpersonalna",
+      "Praca zespołowa (teamwork)",
+      "Samodzielność i odpowiedzialność",
+      "Rozwiązywanie problemów",
+      "Zarządzanie czasem",
+      "Adaptacja do zmieniających się wymagań",
+      "Myślenie analityczne",
+      "Proaktywność",
+      "Kreatywność",
+      "Empatia w pracy z klientem i zespołem"
+    ],
+    "hardSkills": [
+      "HTML5 & CSS3 (Flexbox, Grid)",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React / Vue / Angular",
+      "Node.js",
+      ".NET (C#, ASP.NET Core)",
+      "REST API i GraphQL",
+      "Python (podstawy, automatyzacje)",
+      "SQL i relacyjne bazy danych (PostgreSQL, MySQL)",
+      "MongoDB (bazy nierelacyjne)",
+      "Git i GitHub / GitLab",
+      "Docker i podstawy CI/CD",
+      "Testowanie jednostkowe i integracyjne (Jest, xUnit, NUnit)"
+    ],
+    "lang": [
+      {
+        "language": "Polski",
+        "level": "Rodzimy"
+      },
+      {
+        "language": "Angielski",
+        "level": "Zaawansowany (B2)"
+      }
+    ],
+    "about": "Jestem studiującym technikiem informatyki na kierunku Informatyka WSB-NLU w Nowym Sączu. Na przestrzeni lat rozwijałem swoje zdolności i wciąż je uzupełniam o nowe zakresy z dziedziny IT. Rozwój osobisty jak i zawodowy są dla mnie priorytetem który pozwala mi na osiąganie nowych celów.",
+    "experience": [
+      {
+        "company": "Marbex Sp. Z o.o.",
+        "position": "Informatyk - Help Desk",
+        "time": "01.2024 - 03.2024",
+        "description": "Nadzorowanie serwerów, pomoc użytkownikom na komputerach pracowników firmy (software, hardware)."
+      },
+      {
+        "company": "MAD Script Michał Jabrzyk",
+        "position": "Game Developer, Właściciel",
+        "time": "07.2021 - 11.2022",
+        "description": "Rozwijanie części serwerowej (backend) gry sieciowej, aktualizowanie klienta, bug fixy."
+      },
+      {
+        "company": "AMXNet",
+        "position": "Właściciel",
+        "time": "01.2015 - 01.2021",
+        "description": "Wytwarzanie oprogramowania na zamówienie klienta (C#, JavaScript, Unity3D), serwis sprzętu komputerowego, serwis drukarek 3D, HelpDesk."
+      },
+      {
+        "company": "P.P.H SHINDO-SPORT",
+        "position": "Informatyk",
+        "time": "01.2002 - 01.2014",
+        "description": "Administrowanie serwerem, sklepem internetowym, HelpDesk, ManageEngine, LMS, wprowadzanie produktów do sklepu internetowego."
+      }
+    ],
+    "education": [
+      {
+        "school": "Wyższa Szkoła Biznesu - National Louis University w Nowym Sączu",
+        "fieldOfStudy": "Informatyka",
+        "time": "10.2023 - obecnie",
+        "degree": "Inżynier",
+        "specialization": "Programista Aplikacji Biznesowych",
+        "additional": "Studia Wyższe na wydziale informatyki"
+      },
+      {
+        "school": "Zaoczne Policealne Studium Zawodowe Technik Informatyki w Tomaszowie Mazowieckim",
+        "fieldOfStudy": "Informatyka",
+        "time": "09.2003 - 06.2005",
+        "degree": "Średnie",
+        "specialization": "Technik Informatyk",
+        "additional": "Uzyskanie tytułu - Technik Informatyk"
+      },
+      {
+        "school": "Liceum Ogólnokształcące w Tomaszowie Mazowieckim",
+        "fieldOfStudy": "Ogłólnokształcące",
+        "time": "09.2001 - 06.2003",
+        "degree": "Średnie",
+        "specialization": "Brak specjalizacji",
+        "additional": "Uzyskanie Świadectwa Dojrzałości"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Koło Algorytmiczne przy WSB-NLU",
+        "time": "10.2023 - obecnie",
+        "location": "Nowy Sącz",
+        "description": "Aktywność związana z nauką programowania C/C++ jak i opracowaniem algorytmów."
+      },
+      {
+        "name": "Koło GameDev przy WSB-NLU",
+        "time": "10.2023 - obecnie",
+        "location": "Nowy Sącz",
+        "description": "Aktywność związana z nauką tworzenia gier i projektowania (Unity3D i Unreal Engine)."
+      }
+    ]
+  },
+  "en": {
+    "picture": "/img/1n.jpg",
+    "firstName": "Michal",
+    "secoundName": "Piotr",
+    "surname": "Jabrzyk",
+    "birthDate": "1983-01-11",
+    "email": "michaljabrzyk.it@gmail.com",
+    "mobile": "+48 500 254 918",
+    "fb": "https://www.facebook.com/emyot83/",
+    "github": "https://www.github.com/Deosen",
+    "linkedin": "https://www.linkedin.com/in/michal-jabrzyk",
+    "website": "https://portfolio-michaljabrzyk.pl",
+    "softSkills": [
+      "Interpersonal communication",
+      "Teamwork",
+      "Independence and responsibility",
+      "Problem-solving",
+      "Time management",
+      "Adaptability to changing requirements",
+      "Analytical thinking",
+      "Proactiveness",
+      "Creativity",
+      "Empathy when working with clients and teams"
+    ],
+    "hardSkills": [
+      "HTML5 & CSS3 (Flexbox, Grid)",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React / Vue / Angular",
+      "Node.js",
+      ".NET (C#, ASP.NET Core)",
+      "REST API and GraphQL",
+      "Python (basics, automation)",
+      "SQL and relational databases (PostgreSQL, MySQL)",
+      "MongoDB (NoSQL databases)",
+      "Git and GitHub / GitLab",
+      "Docker and basic CI/CD",
+      "Unit and integration testing (Jest, xUnit, NUnit)"
+    ],
+    "lang": [
+      {
+        "language": "Polish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Advanced (B2)"
+      }
+    ],
+    "about": "I am an IT technician student in Computer Science at WSB-NLU in Nowy Sącz. Over the years, I have developed my skills and continue to expand them with new areas in IT. Personal and professional development is my priority, allowing me to achieve new goals.",
+    "experience": [
+      {
+        "company": "Marbex Sp. Z o.o.",
+        "position": "IT Specialist - Help Desk",
+        "time": "01.2024 - 03.2024",
+        "description": "Server monitoring, assisting employees with company computers (software, hardware)."
+      },
+      {
+        "company": "MAD Script Michał Jabrzyk",
+        "position": "Game Developer, Owner",
+        "time": "07.2021 - 11.2022",
+        "description": "Developing backend part of an online game, client updates, bug fixes."
+      },
+      {
+        "company": "AMXNet",
+        "position": "Owner",
+        "time": "01.2015 - 01.2021",
+        "description": "Custom software development (C#, JavaScript, Unity3D), computer equipment service, 3D printer service, HelpDesk."
+      },
+      {
+        "company": "P.P.H SHINDO-SPORT",
+        "position": "IT Specialist",
+        "time": "01.2002 - 01.2014",
+        "description": "Server and online store administration, HelpDesk, ManageEngine, LMS, product entry to the online store."
+      }
+    ],
+    "education": [
+      {
+        "school": "Wyższa Szkoła Biznesu - National Louis University in Nowy Sącz",
+        "fieldOfStudy": "Computer Science",
+        "time": "10.2023 - present",
+        "degree": "Engineer",
+        "specialization": "Business Application Developer",
+        "additional": "Higher education in Computer Science faculty"
+      },
+      {
+        "school": "Post-secondary Vocational School of IT Technician in Tomaszów Mazowiecki",
+        "fieldOfStudy": "Computer Science",
+        "time": "09.2003 - 06.2005",
+        "degree": "Secondary",
+        "specialization": "IT Technician",
+        "additional": "Graduated with IT Technician title"
+      },
+      {
+        "school": "High School in Tomaszów Mazowiecki",
+        "fieldOfStudy": "General Education",
+        "time": "09.2001 - 06.2003",
+        "degree": "Secondary",
+        "specialization": "No specialization",
+        "additional": "Graduated with Maturity Certificate"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Algorithmic Club at WSB-NLU",
+        "time": "10.2023 - present",
+        "location": "Nowy Sącz",
+        "description": "Activity related to learning C/C++ programming and algorithm development."
+      },
+      {
+        "name": "GameDev Club at WSB-NLU",
+        "time": "10.2023 - present",
+        "location": "Nowy Sącz",
+        "description": "Activity related to learning game development and design (Unity3D and Unreal Engine). "
+      }
+    ]
+  }
 }

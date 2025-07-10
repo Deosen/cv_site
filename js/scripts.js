@@ -28,6 +28,8 @@ async function loadCVData(lang = 'pl') {
             <p><i class="fas fa-user"></i> <strong>${cvData.firstName} ${cvData.secoundName} ${cvData.surname}</strong></p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:${cvData.email}">${cvData.email}</a></p>
             <p><i class="fas fa-phone"></i> <a href="tel:${cvData.mobile}">${cvData.mobile}</a></p>
+            <p><i class="fas fa-user"></i> <strong>${cvData.birthDate}</strong></p>
+
         </div>
         <h3><i class="fas fa-link"></i> ${lang === 'pl' ? 'Linki' : 'Links'}</h3>
         <div class="social-links">
